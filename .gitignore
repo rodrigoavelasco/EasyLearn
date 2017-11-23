@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int userinput = 0, lives, correcta = 0;
+    int userinput=0, highscore, correcta, tries;
     string Name;
     char answer;
     double Grade;
@@ -30,52 +30,69 @@ int main()
             switch (choice)
             {
                 case 1:
-                    lives =3;
+                    highscore=0;
                     cout << " Thank you for choosing addition! lets Start" << endl;
-                        for (correcta=39; userinput!=correcta ;lives--, cout << "sorry wrong answer try again.\n" )
+                    correcta=39;
+                    tries = 3;
+                    cout << "First question, you have " << tries << " tries for each question.\n";
+                        while (userinput!=correcta)
                         {
-                            if (lives==0)
+                            if (tries==0)
                             {
+                                
                                 cout << "Im Sorry " << Name << " Game Over";
+                                cout << "Your highscore is " << highscore;
                                 break;
                             }
-                            else
-                            {
-                            cout << "you have " << lives << " lives that means "<< lives << " tries remaining.\n" ;
                             cout << " what is 15+24 ?" << endl;
                             cin >> userinput;
+
+                            if (userinput==correcta)
+                            {
+                                cout<< "Congrats right answer.\n";
+                                highscore+=100;
+                                  cout << "Your highscore is " << highscore;
+                            }
+                            if (userinput!=correcta)
+                            {
+                                
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
                             }
                         }
-                    if (lives ==0)
+                    if (tries==0)
                     {
                         break;
                     }
-                    
-                    while (userinput != correcta)
+                    correcta=145;
+                    tries = 3;
+                    while (userinput!=correcta)
                     {
-                        cout << " opps! wrong answer " << lives << " lives remaining." << endl;
-                        cout << " try again?" << endl;
+                        if (tries==0)
+                        {
+                            
+                            cout << "Im Sorry " << Name << " Game Over";
+                            cout << "Your highscore is " << highscore;
+                            break;
+                        }
+                        cout << " what is 56 + 79 + 10 ?" << endl;
                         cin >> userinput;
-                    }
-                    cout << lives ;
-                    cout << " what is 56 + 79 + 10 ?" << endl;
-                    cin >> userinput;
-                    while (userinput != 145)
-                    {
-                        cout << " opps! wrong answer, you now how have 2 lives remaining." << endl;
-                        cout << " would you like to restart?" << endl;
-                        cin >> userinput;
-                    }
-                    cout << " what is 145 + 80 + 1057 + 26?" << endl;
-                    cin >> userinput;
-                    while (userinput != 1308)
-                    {
-                        cout << " opps! wrong answer, you now how have 2 lives remaining." << endl;
-                        cout << " would you like to restart?" << endl;
-                        cin >> userinput;
-                    }
-                  
                         
+                        if (userinput==correcta)
+                        {
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
+                        }
+                        if (userinput!=correcta)
+                        {
+                            
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
+                        }
+                    }
                     
             }
             
