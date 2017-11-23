@@ -1,32 +1,91 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    int userinput = 0, lives, correcta = 0;
+    string Name;
+    char answer;
+    double Grade;
+    int choice;
+    cout << " Hi, would you like to play a math game? " << endl << "Press y for yes and n for no.\n";
+    cin >> answer;
+    if (answer == 'y') {
+        cout << " Lets have some fun playing and learning at the same time! " << endl;
+        cout << " what is your name?" << endl;
+        cin >> Name;
+        cout << "ok " << Name << " let's start having some fun!" << endl;
+        cout << "press y if you want continue press n to quit.\n.";
+        cin >> answer;
+        if (answer == 'y')
+        {
+            cout << " first, we have to choose what kind of math game youd want to play!" << endl;
+            cout << " what kind of math do you like?" << endl;
+            cout << " please press the number that goes with the kind of math game that you want to play."<< endl;
+            cout << " press 1 for addition" << endl;
+            cout << " press 2 for multiplication" << endl;
+            cout << " press 3 for subtraction" << endl;
+            cout << " press 4 for division" << endl;
+            cin >> choice;
+            switch (choice)
+            {
+                case 1:
+                    lives =3;
+                    cout << " Thank you for choosing addition! lets Start" << endl;
+                        for (correcta=39; userinput!=correcta ;lives--, cout << "sorry wrong answer try again.\n" )
+                        {
+                            if (lives==0)
+                            {
+                                cout << "Im Sorry " << Name << " Game Over";
+                                break;
+                            }
+                            else
+                            {
+                            cout << "you have " << lives << " lives that means "<< lives << " tries remaining.\n" ;
+                            cout << " what is 15+24 ?" << endl;
+                            cin >> userinput;
+                            }
+                        }
+                    if (lives ==0)
+                    {
+                        break;
+                    }
+                    
+                    while (userinput != correcta)
+                    {
+                        cout << " opps! wrong answer " << lives << " lives remaining." << endl;
+                        cout << " try again?" << endl;
+                        cin >> userinput;
+                    }
+                    cout << lives ;
+                    cout << " what is 56 + 79 + 10 ?" << endl;
+                    cin >> userinput;
+                    while (userinput != 145)
+                    {
+                        cout << " opps! wrong answer, you now how have 2 lives remaining." << endl;
+                        cout << " would you like to restart?" << endl;
+                        cin >> userinput;
+                    }
+                    cout << " what is 145 + 80 + 1057 + 26?" << endl;
+                    cin >> userinput;
+                    while (userinput != 1308)
+                    {
+                        cout << " opps! wrong answer, you now how have 2 lives remaining." << endl;
+                        cout << " would you like to restart?" << endl;
+                        cin >> userinput;
+                    }
+                  
+                        
+                    
+            }
+            
+            }
+            else
+                cout << "Thanks";
+            }
+            else
+            cout << "Bye bye" << endl;
+    
+    system("pause");
+    return 0;
+}
