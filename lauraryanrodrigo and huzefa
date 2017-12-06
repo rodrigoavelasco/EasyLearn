@@ -10,7 +10,8 @@ int main()
     int choice;
     cout << " Hi, would you like to play a math game? " << endl << "Press y for yes and n for no.\n";
     cin >> answer;
-    if (answer == 'y') {
+    if (answer == 'y')
+    {
         cout << " Lets have some fun playing and learning at the same time! " << endl;
         cout << " what is your name?" << endl;
         cin >> Name;
@@ -40,7 +41,7 @@ int main()
                             if (tries==0)
                             {
                                 
-                                cout << "Im Sorry " << Name << " Game Over";
+                                cout << "Im Sorry " << Name << " Game Over.\n";
                                 cout << "Your highscore is " << highscore;
                                 break;
                             }
@@ -72,7 +73,7 @@ int main()
                         if (tries==0)
                         {
                             
-                            cout << "Im Sorry " << Name << " Game Over";
+                            cout << "Im Sorry " << Name << " Game Over.\n";
                             cout << "Your highscore is " << highscore;
                             break;
                         }
@@ -92,145 +93,339 @@ int main()
                             tries -=1;
                             cout << "sorry wrong answer try again.\n" ;
                         }
-                    
+                                
+                    }
+                    if (tries==0)
+                    {
+                        break;
+                    }
+                    correcta=150;
+                    tries = 3;
+                    while (userinput!=correcta)
+                    {
                         if (tries==0)
                         {
+                            
+                            cout << "Im Sorry " << Name << " Game Over.\n";
+                            cout << "Your highscore is " << highscore;
                             break;
                         }
-                        correcta=254;
-                        tries = 3;
-                        while (userinput!=correcta)
-                        {
-                            if (tries==0)
-                            {
-                                
-                                cout << "Im Sorry " << Name << " Game Over";
-                                cout << "Your highscore is " << highscore;
-                                break;
-                            }
-                            cout << " what is 120 + 80 + 54 ?" << endl;
-                            cin >> userinput;
-                            
-                            if (userinput==correcta)
-                            {
-                                cout<< "Congrats right answer.\n";
-                                highscore+=100;
-                                cout << "Your highscore is " << highscore;
-                            }
-                            if (userinput!=correcta)
-                            {
-                                
-                                highscore-=100;
-                                tries -=1;
-                                cout << "sorry wrong answer try again.\n" ;
-                            }
+                        cout << " what is 56 + 79 + 15 ?" << endl;
+                        cin >> userinput;
                         
-                        }
-                        if (tries==0)
+                        if (userinput==correcta)
                         {
-                            break;
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
                         }
-                        correcta=145;
-                        tries = 3;
-                        while (userinput!=correcta)
+                        if (userinput!=correcta)
                         {
-                            if (tries==0)
-                            {
-                                
-                                cout << "Im Sorry " << Name << " Game Over";
-                                cout << "Your highscore is " << highscore;
-                                break;
-                            }
-                            cout << " what is 56 + 79 + 10 ?" << endl;
-                            cin >> userinput;
                             
-                            if (userinput==correcta)
-                            {
-                                cout<< "Congrats right answer.\n";
-                                highscore+=100;
-                                cout << "Your highscore is " << highscore;
-                            }
-                            if (userinput!=correcta)
-                            {
-                                
-                                highscore-=100;
-                                tries -=1;
-                                cout << "sorry wrong answer try again.\n" ;
-                            }
-                            
-                            if (tries==0)
-                            {
-                                break;
-                            }
-                            correcta=254;
-                            tries = 3;
-                            while (userinput!=correcta)
-                            {
-                                if (tries==0)
-                                {
-                                    
-                                    cout << "Im Sorry " << Name << " Game Over";
-                                    cout << "Your highscore is " << highscore;
-                                    break;
-                                }
-                                cout << " what is 120 + 80 + 54 ?" << endl;
-                                cin >> userinput;
-                                
-                                if (userinput==correcta)
-                                {
-                                    cout<< "Congrats right answer.\n";
-                                    highscore+=100;
-                                    cout << "Your highscore is " << highscore;
-                                }
-                                if (userinput!=correcta)
-                                {
-                                    
-                                    highscore-=100;
-                                    tries -=1;
-                                    cout << "sorry wrong answer try again.\n" ;
-                                }
-                                
-                            }
-                            
-                            if (tries==0)
-                            {
-                                break;
-                            }
-                            correcta=254;
-                            tries = 3;
-                            while (userinput!=correcta)
-                            {
-                                if (tries==0)
-                                {
-                                    
-                                    cout << "Im Sorry " << Name << " Game Over";
-                                    cout << "Your highscore is " << highscore;
-                                    break;
-                                }
-                                cout << " what is 120 + 80 + 54 ?" << endl;
-                                cin >> userinput;
-                                
-                                if (userinput==correcta)
-                                {
-                                    cout<< "Congrats right answer.\n";
-                                    highscore+=100;
-                                    cout << "Your highscore is " << highscore;
-                                }
-                                if (userinput!=correcta)
-                                {
-                                    
-                                    highscore-=100;
-                                    tries -=1;
-                                    cout << "sorry wrong answer try again.\n" ;
-                                }
-                                
-                            }
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
                         }
                         
                     }
-                    
+                    if (tries==0)
+                    {
+                        break;
+                    }
+                    correcta=152;
+                    tries = 3;
+                    while (userinput!=correcta)
+                    {
+                        if (tries==0)
+                        {
+                            
+                            cout << "Im Sorry " << Name << " Game Over.\n";
+                            cout << "Your highscore is " << highscore;
+                            break;
+                        }
+                        cout << " what is 56 + 79 + 17?" << endl;
+                        cin >> userinput;
+                        
+                        if (userinput==correcta)
+                        {
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
+                        }
+                        if (userinput!=correcta)
+                        {
+                            
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
+                        }
+                        
+                    }
+                    if (tries==0)
+                    {
+                        break;
+                    }
+                    correcta=153;
+                    tries = 3;
+                    while (userinput!=correcta)
+                    {
+                        if (tries==0)
+                        {
+                            
+                            cout << "Im Sorry " << Name << " Game Over.\n";
+                            cout << "Your highscore is " << highscore;
+                            break;
+                        }
+                        cout << " what is 56 + 79 + 18 ?" << endl;
+                        cin >> userinput;
+                        
+                        if (userinput==correcta)
+                        {
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
+                        }
+                        if (userinput!=correcta)
+                        {
+                            
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
+                        }
+                        
+                    }
+                    if (tries==0)
+                    {
+                        break;
+                    }
+                    correcta=154;
+                    tries = 3;
+                    while (userinput!=correcta)
+                    {
+                        if (tries==0)
+                        {
+                            
+                            cout << "Im Sorry " << Name << " Game Over.\n";
+                            cout << "Your highscore is " << highscore;
+                            break;
+                        }
+                        cout << " what is 56 + 79 + 19 ?" << endl;
+                        cin >> userinput;
+                        
+                        if (userinput==correcta)
+                        {
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
+                        }
+                        if (userinput!=correcta)
+                        {
+                            
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
+                        }
+                        
+                    }
+                case 2:
+                    highscore=0;
+                    cout << " Thank you for choosing addition! lets Start" << endl;
+                    correcta=39;
+                    tries = 3;
+                    cout << "First question, you have " << tries << " tries for each question.\n";
+                    while (userinput!=correcta)
+                    {
+                        if (tries==0)
+                        {
+                            
+                            cout << "Im Sorry " << Name << " Game Over.\n";
+                            cout << "Your highscore is " << highscore;
+                            break;
+                        }
+                        cout << " what is 15+24 ?" << endl;
+                        cin >> userinput;
+                        
+                        if (userinput==correcta)
+                        {
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
+                        }
+                        if (userinput!=correcta)
+                        {
+                            
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
+                        }
+                    }
+                    if (tries==0)
+                    {
+                        break;
+                    }
+                    correcta=145;
+                    tries = 3;
+                    while (userinput!=correcta)
+                    {
+                        if (tries==0)
+                        {
+                            
+                            cout << "Im Sorry " << Name << " Game Over.\n";
+                            cout << "Your highscore is " << highscore;
+                            break;
+                        }
+                        cout << " what is 56 + 79 + 10 ?" << endl;
+                        cin >> userinput;
+                        
+                        if (userinput==correcta)
+                        {
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
+                        }
+                        if (userinput!=correcta)
+                        {
+                            
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
+                        }
+                        
+                    }
+                    if (tries==0)
+                    {
+                        break;
+                    }
+                    correcta=150;
+                    tries = 3;
+                    while (userinput!=correcta)
+                    {
+                        if (tries==0)
+                        {
+                            
+                            cout << "Im Sorry " << Name << " Game Over.\n";
+                            cout << "Your highscore is " << highscore;
+                            break;
+                        }
+                        cout << " what is 56 + 79 + 15 ?" << endl;
+                        cin >> userinput;
+                        
+                        if (userinput==correcta)
+                        {
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
+                        }
+                        if (userinput!=correcta)
+                        {
+                            
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
+                        }
+                        
+                    }
+                    if (tries==0)
+                    {
+                        break;
+                    }
+                    correcta=152;
+                    tries = 3;
+                    while (userinput!=correcta)
+                    {
+                        if (tries==0)
+                        {
+                            
+                            cout << "Im Sorry " << Name << " Game Over.\n";
+                            cout << "Your highscore is " << highscore;
+                            break;
+                        }
+                        cout << " what is 56 + 79 + 17?" << endl;
+                        cin >> userinput;
+                        
+                        if (userinput==correcta)
+                        {
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
+                        }
+                        if (userinput!=correcta)
+                        {
+                            
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
+                        }
+                        
+                    }
+                    if (tries==0)
+                    {
+                        break;
+                    }
+                    correcta=153;
+                    tries = 3;
+                    while (userinput!=correcta)
+                    {
+                        if (tries==0)
+                        {
+                            
+                            cout << "Im Sorry " << Name << " Game Over.\n";
+                            cout << "Your highscore is " << highscore;
+                            break;
+                        }
+                        cout << " what is 56 + 79 + 18 ?" << endl;
+                        cin >> userinput;
+                        
+                        if (userinput==correcta)
+                        {
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
+                        }
+                        if (userinput!=correcta)
+                        {
+                            
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
+                        }
+                        
+                    }
+                    if (tries==0)
+                    {
+                        break;
+                    }
+                    correcta=154;
+                    tries = 3;
+                    while (userinput!=correcta)
+                    {
+                        if (tries==0)
+                        {
+                            
+                            cout << "Im Sorry " << Name << " Game Over.\n";
+                            cout << "Your highscore is " << highscore;
+                            break;
+                        }
+                        cout << " what is 56 + 79 + 19 ?" << endl;
+                        cin >> userinput;
+                        
+                        if (userinput==correcta)
+                        {
+                            cout<< "Congrats right answer.\n";
+                            highscore+=100;
+                            cout << "Your highscore is " << highscore;
+                        }
+                        if (userinput!=correcta)
+                        {
+                            
+                            highscore-=100;
+                            tries -=1;
+                            cout << "sorry wrong answer try again.\n" ;
+                        }
+                        
+                    }
+                
             }
-            
             }
             else
                 cout << "Thanks";
